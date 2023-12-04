@@ -93,5 +93,11 @@ p {
 }
 
 #profile {
-	border: solid 1px var(--main-color);
+	border: 1px solid var(--main-color);
+	transition: all 0.5s ease;
+}
+
+#profile:hover {
+	transform: scale(1.1);
+	box-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
