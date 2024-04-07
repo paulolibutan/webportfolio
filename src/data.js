@@ -1,5 +1,5 @@
 export const navMenu = [
-  { name: "Home", destination: "/webportfolio/" },
+  { name: "Home", destination: "/" },
   { name: "Tech", destination: "#tech" },
   { name: "Work", destination: "#work" },
   { name: "Contact", destination: "#contact" },
