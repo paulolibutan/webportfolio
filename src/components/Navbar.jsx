@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <div className="max-w-3xl flex flex-row justify-between items-center w-full">
           <h1 className="font-bold text-3xl hover:scale-110 transition ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500">
-            <Link to={"/"}>plbtn_</Link>
+            <a href="/">plbtn_</a>
           </h1>
           <div className="flex flex-row justify-between items-center gap-8">
             <ul className="hidden md:flex flex-row gap-5">
@@ -26,7 +26,7 @@ const Navbar = () => {
                     key={index}
                     className="font-semibold text-base hover:scale-110 transition ease-in-out duration-300"
                   >
-                    <Link to={item.destination}>{item.name}</Link>
+                    <a href={item.destination}>{item.name}</a>
                   </li>
                 );
               })}
