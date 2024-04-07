@@ -2,13 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import { ToggleContextProvider } from "./context/ToggleContext";
+import Home from "./pages/Home.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/webportfolio/",
+    element: <App />,
+    children: [
+      {
+        path: "/webportfolio/",
+        element: <Home />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ToggleContextProvider>
     <React.StrictMode>
-      <App />
+      <RouterProvider router={router} />
     </React.StrictMode>
   </ToggleContextProvider>
 );
