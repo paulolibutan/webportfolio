@@ -6,7 +6,7 @@ const ProjectsCard = ({ name, description, demoLink, codeLink }) => {
   const { darkMode } = useContext(ToggleContext);
 
   return (
-    <div className="cursor-pointer flex flex-col mt-10 gap-1 w-full rounded-xl px-10 py-5 transition ease-in-out duration-300 hover:bg-gray-300 hover:bg-opacity-10 hover:shadow-xl">
+    <div className="cursor-pointer flex flex-col mt-10 gap-1 w-full rounded-xl px-5 md:px-10 py-5 transition ease-in-out duration-300 hover:bg-gray-300 hover:bg-opacity-10 hover:shadow-xl">
       <h1 className="text-xl font-bold ">{name}</h1>
       <div
         className={`${
