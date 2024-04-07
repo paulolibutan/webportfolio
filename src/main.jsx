@@ -9,11 +9,11 @@ import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/webportfolio/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/webportfolio/",
         element: <Home />,
       },
     ],
