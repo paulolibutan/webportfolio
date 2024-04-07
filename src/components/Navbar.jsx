@@ -26,7 +26,7 @@ const Navbar = () => {
                     key={index}
                     className="font-semibold text-base hover:scale-110 transition ease-in-out duration-300"
                   >
-                    <a href={item.destination}>{item.name}</a>
+                    <Link to={item.destination}>{item.name}</Link>
                   </li>
                 );
               })}
