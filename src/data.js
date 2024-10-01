@@ -24,29 +24,8 @@ export const works = [
   {
     name: "E-commerce Website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam aspernatur, perspiciatis sint, vero at nobis perferendis, delectus officia sed voluptates laboriosam qui ratione doloribus architecto! Voluptas illum iure enim!",
-    demoLink: "https://test/com",
-    codeLink: "https://test/com",
-  },
-  {
-    name: "E-commerce API",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam aspernatur, perspiciatis sint, vero at nobis perferendis, delectus officia sed voluptates laboriosam qui ratione doloribus architecto! Voluptas illum iure enim!",
-    demoLink: "https://test/com",
-    codeLink: "https://test/com",
-  },
-  {
-    name: "To-do App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam aspernatur, perspiciatis sint, vero at nobis perferendis, delectus officia sed voluptates laboriosam qui ratione doloribus architecto! Voluptas illum iure enim!",
-    demoLink: "https://test/com",
-    codeLink: "https://test/com",
-  },
-  {
-    name: "Expense Tracker App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam aspernatur, perspiciatis sint, vero at nobis perferendis, delectus officia sed voluptates laboriosam qui ratione doloribus architecto! Voluptas illum iure enim!",
-    demoLink: "https://test/com",
-    codeLink: "https://test/com",
+      "This is a demo ecommerce application with admin and customer functionalities. Backend API is built using node and express with MongoDB database.",
+    demoLink: "https://shop.iampaulolibutan.com",
+    codeLink: "https://github.com/paulolibutan/mern-ecommerce-app",
   },
 ];
