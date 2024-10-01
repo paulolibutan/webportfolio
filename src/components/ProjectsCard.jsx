@@ -1,6 +1,7 @@
 import { MdOutlineCode, MdPageview } from "react-icons/md";
 import ToggleContext from "../context/ToggleContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectsCard = ({ name, description, demoLink, codeLink }) => {
   const { darkMode } = useContext(ToggleContext);
@@ -16,8 +17,9 @@ const ProjectsCard = ({ name, description, demoLink, codeLink }) => {
         {description}
       </div>
       <div className="flex flex-row justify-center items-center mx-auto md:mx-0 w-full md:max-w-xs md:w-auto gap-3 md:gap-5 text-sm py-3 font-semibold">
-        <a
-          href={codeLink}
+        <Link
+          to={codeLink}
+          target="_blank"
           className={`${
             darkMode ? `bg-transparent border` : `bg-black text-white`
           } p-2 rounded-full w-full hover:scale-105 transition-all ease-in-out duration-300`}
@@ -26,9 +28,10 @@ const ProjectsCard = ({ name, description, demoLink, codeLink }) => {
             <MdOutlineCode />
             <h4>View Code</h4>
           </div>
-        </a>
-        <a
-          href={demoLink}
+        </Link>
+        <Link
+          to={demoLink}
+          target="_blank"
           className={`${
             darkMode ? `bg-transparent border` : `bg-black text-white`
           } p-2 rounded-full w-full hover:scale-105 transition-all ease-in-out duration-300`}
@@ -37,7 +40,7 @@ const ProjectsCard = ({ name, description, demoLink, codeLink }) => {
             <MdPageview />
             <h4>Live Demo</h4>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
